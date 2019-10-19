@@ -1,1 +1,24 @@
-<router-outlet></router-outlet>
+<header>
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <h1>Survey Shrike</h1>
+      <span class="menu-spacer"></span>
+      <div>
+        <a mat-button [routerLink]="'/create-survey'"> Create Survey </a>
+        <a mat-button [routerLink]="'/surveys'"> Surveys </a>
+      </div>
+    </mat-toolbar-row>
+
+    <mat-toolbar-row>
+      <span style="font-size: 12px;">Survey Shrike helps you create surveys</span>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</header>
+
+<section class="container">
+  <div class="row">
+    <router-outlet></router-outlet>
+  </div>
+</section>
+
+<footer></footer>
