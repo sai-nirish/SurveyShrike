@@ -1,0 +1,25 @@
+<div class="survey-element">
+  <div class="form-row p-5">
+    <div class="col-md-8">
+      <mat-form-field class="d-block" required="true">
+        <mat-label>Question</mat-label>
+        <input class="form-control" matInput placeholder="Question">
+      </mat-form-field>
+    </div>
+    <div class="col-md-4">
+      <mat-form-field class="d-block pt-3" required="true">
+        <mat-label>Question type</mat-label>
+        <mat-select required>
+          <mat-option value="mlInput">Paragraph</mat-option>
+          <mat-option value="slInput">Short answer</mat-option>
+          <mat-option value="dropDown">Dropdown</mat-option>
+          <mat-option value="radio">Radio</mat-option>
+          <mat-option value="fileUpload">File upload</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+  <div>
+    <app-question-element></app-question-element>
+  </div>
+</div>

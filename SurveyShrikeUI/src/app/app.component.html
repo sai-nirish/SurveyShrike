@@ -1,24 +1,23 @@
-<header>
-  <mat-toolbar color="primary">
-    <mat-toolbar-row>
-      <h1>Survey Shrike</h1>
-      <span class="menu-spacer"></span>
-      <div>
-        <a mat-button [routerLink]="'/create-survey'"> Create Survey </a>
-        <a mat-button [routerLink]="'/surveys'"> Surveys </a>
-      </div>
-    </mat-toolbar-row>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">SurveyShrike</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-    <mat-toolbar-row>
-      <span style="font-size: 12px;">Survey Shrike helps you create surveys</span>
-    </mat-toolbar-row>
-  </mat-toolbar>
-</header>
-
-<section class="container">
-  <div class="row">
-    <router-outlet></router-outlet>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Create<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">View</a>
+      </li>
+    </ul>
   </div>
-</section>
+</nav>
+
+
+<router-outlet></router-outlet>
 
 <footer></footer>
